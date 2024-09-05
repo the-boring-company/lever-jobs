@@ -114,8 +114,6 @@ window.loadLeverJobs = function (options) {
     });
 
     for (var i = 0; i < groupedPostings.length; i++) {
-      console.log("Grouped Posting", groupedPostings[i])
-
       // If there are no departments used, there is only one "unspecified" department, and we don't have to render that.
       if (groupedPostings.length >= 2) {
         var haveDepartments = true;
@@ -176,7 +174,7 @@ window.loadLeverJobs = function (options) {
 
       head.appendChild(link);
     }
-    addCss('https://github.com/the-boring-company/lever-jobs/embed-css/style.css');
+    addCss('https://the-boring-company.github.io/lever-jobs/embed-css/style.css');
   }
 
   var request = new XMLHttpRequest();
